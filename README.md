@@ -11,12 +11,11 @@ node index.js
 
 ### In case of problems:
 
-If something "red" is happening in console, try this is console:
-
+If something "red" is happening in console, run this
+to clear the queue or un-ban all banned users: 
 ```
 localStorage.removeItem('tweetsJSON')
 ```
-and
 ```
 localStorage.removeItem('bannedUsers')
 ```
