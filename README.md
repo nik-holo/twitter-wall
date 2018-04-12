@@ -7,6 +7,8 @@ node index.js
 * http://localhost:3000/ - default feed page
 * http://localhost:3000/filter.html - pre-moderation page
 
+Chrome is recommended. Cmd+Shift+F — enters fullscreen without any interface.
+
 
 
 ### In case of problems:
