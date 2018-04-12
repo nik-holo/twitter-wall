@@ -1,2 +1,5 @@
 # twitter-wall
-nodejs server for live twitter feed with simple premoderation
+ `node index.js` to start service
+
+http://localhost:3000/ - default feed page
+http://localhost:3000/filter.html - pre-moderation page

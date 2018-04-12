@@ -10,12 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4",
+    "express": "^4.16.3",
     "jquery": "^2.2.2",
-    "socket.io": "^1.4.5",
-    "twitter": "^1.2.5"
+    "socket.io": "^1.7.4",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.17.3"
   }
 }
