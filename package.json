@@ -1,0 +1,21 @@
+{
+  "name": "feed-cubes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "app": "nodemon -e js,html --watch ./ --watch ./js/ ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jquery": "^2.2.2",
+    "socket.io": "^1.4.5",
+    "twitter": "^1.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  }
+}

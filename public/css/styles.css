@@ -1,0 +1,177 @@
+body, html, .container, .bg, #container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+.bg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/bg.png');
+    /* animation-name: MOVE-BG; */
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes MOVE-BG {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 1152px;
+    }
+}
+
+.container-yellow {
+    position: absolute;
+    background: linear-gradient(to top left, transparent, yellow);
+    mix-blend-mode: overlay;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.container-darker {
+    position: absolute;
+    background-color: #000;
+    mix-blend-mode: overlay;
+    padding: 20px;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    top: 20px;
+    left: 20px;
+}
+
+.container-bw {
+    position: absolute;
+    background-color: #000;
+    mix-blend-mode: hue;
+    padding: 20px;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    background: url(../img/logo.svg) no-repeat;
+    width: 50px;
+    height: 77px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #00dd3b;
+    letter-spacing: .18em;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    padding-top: 19px;
+    padding-left: 126px;
+}
+
+.cube {
+    width: calc(100% - 160px);
+    height: calc(100% - 160px);
+    top: 20px;
+    left: 20px;
+    padding: 60px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.userpic {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    filter: grayscale(100%);
+    top: 0;
+    right: 0;
+}
+
+.userpic img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1))
+}
+
+.tweettext {
+    margin-top: 90px;
+    width: calc(50% - 40px);
+    line-height: 130%;
+    font-size: 33px;
+    color: #fff;
+    font-weight: 900;
+    background: linear-gradient(to top left, #04de3a, #99ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#author {
+    margin-top: 30px;
+    font-size: 44px;
+    letter-spacing: 2px;
+    -webkit-text-fill-color: #fff;
+}
+
+.hashname {
+    margin-top: 150px;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.admin-area {
+    background: #212529;
+    color: #fff;
+    padding: 40px;
+}
+.tweets {
+}
+.tweet {
+
+    float: left;
+    background: #fff;
+    width: 250px;
+    min-height: 440px;
+    padding: 10px 5px 5px;
+    border-radius: 5px;
+    vertical-align: top;
+    color: #212529;
+    display: block;
+    margin-right: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.tweet:first-child {
+    background: #fff;
+
+}
+.tweet:first-child .card-body:before {
+    content: "next tweet";
+    text-align: center;
+    display: block;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    background: #46b53e;
+    padding: 0px 60px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+}
